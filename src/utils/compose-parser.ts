@@ -19,7 +19,7 @@ interface CommentItem {
   reviewer: {
     name?: string | null
     home?: string | null
-    refer?: string | null
+    mention?: string | null
   }
   content?: string | null
   time?: string | null
@@ -116,7 +116,7 @@ const parseCommentItemList = (itr: ArrayIterator<ChildNode>, list: Array<Comment
       const ci: CommentItem = { reviewer: {} }
       ci.reviewer.name = node.textContent
       ci.reviewer.home = node.href
-      // @ 提醒引用
+      // @ 提及
       const refer = nextElem(itr) // <a>
       if (isElement(refer, HTMLAnchorElement)) {
         const code = refer.getAttribute('onclick')
@@ -124,7 +124,7 @@ const parseCommentItemList = (itr: ArrayIterator<ChildNode>, list: Array<Comment
           const i1 = code.indexOf("'")
           const i2 = code.lastIndexOf("'")
           const s = code.substring(i1, i2 + 1)
-          ci.reviewer.refer = new Function(`return ${s}`)()
+          ci.reviewer.mention = new Function(`return ${s}`)()
         }
       }
       parseCommentItemDetail(itr, ci)
