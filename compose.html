@@ -8,6 +8,113 @@
   <title>Compose Page Template</title>
 </head>
 <body>
-<div id="root"></div>
+<div id="whole_body" class="wo-main-body wo-mode-visitor">
+  <script>
+    // custom code...
+  </script>
+  <h1 class="wo-entry-title" data-wc-title>常用正则表达式</h1>
+  <div data-wc-content>
+    <div class="wo-entry-section wo-text-text">
+      1，<br>[\s\S]匹配任意字符，而不是[.\n]，因为.在方括号里表达的是点的本意并非所有字符。<br>2，<br>(?&lt;=start)匹配一个位置，这个位置的前面是start，它只匹配位置不匹配字符，同样(?=end)匹配的位置后面是end。在javascript中不支持(?&lt;=start)这个表达式，在android中，(?&lt;=start)里面的start不能被无上限重复，例如(?&lt;=a+)和(?&lt;=b{2,})都是会报错的，而(?&lt;=b{2,6})是正确的，其原因大概是回顾比较吃cpu吧。
+    </div>
+  </div>
+  <div data-timestamp="1441268038" data-wc-create-time>2015-09-03 16:13:58 +0800</div>
+  <div data-wc-category><a href="/cat/185946">文本</a></div>
+  <div data-wc-prev-next>
+    <div class="wo-entry-prev-next">
+      <a href="/entry/389641" title="关于混淆打包的一些问题">«Newer</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/entry/329736" title="留言板">Older»</a>
+    </div>
+  </div>
+  <div data-wc-comments0>
+    <br>----Mgr.----<br>
+    <div><a href="https://s.wodemo.net/admin/site/compose?id=356530">Edit or Delete</a></div>
+    <br>----Comments(1)----<br>
+    <a href="https://c11e.wodemo.net/">@c11e</a>
+    |
+    <a href="#" onclick="WoUtil.addReplyAt('@c11e');return false" class="wo-reply-at">@</a>
+    at  2016-03-13 17:47:
+    <a href="https://s.wodemo.net/admin/filetalkdelete/141983?return_to_file=1">Del.</a><br>
+    除此之外，一般的正则引擎都会提供一个选项，可以让.匹配换行符，这样.就可以匹配所有了
+    <br><br>在 Java 里，这个选项是 Pattern.DOTALL
+    <hr>
+    <form method="POST" action="https://s.wodemo.net/">
+      <input type="hidden" name="act" value="file_talk">
+      <input type="hidden" name="fid" value="356530">
+      Comment:<br>
+      <textarea name="content" cols="15" rows="3" class="wo-reply-textarea"></textarea>
+      <div>Name:潘松</div>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <div data-wc-comments1>
+    <br>----Mgr.----<br>
+    <div><a href="https://s.wodemo.net/admin/site/compose?id=329736">Edit or Delete</a></div>
+    <br>----Comments(40)----<br>
+    <div>Pg.: <span class="page_no_link">1</span> <a href="/entry/329736?page=2">2</a> </div>
+    <a href="https://891622172.wodemo.net/">【飛龍在天】 (@891622172)</a> | <a href="#" onclick="WoUtil.addReplyAt('@891622172');return false" class="wo-reply-at">@</a>
+    at  2015-03-01 17:40:<a href="https://s.wodemo.net/admin/filetalkdelete/115578?return_to_file=1">Del.</a>
+    <br>
+    /2耶 <br><a href="https://yingyun.wodemo.net">@yingyun</a><br>就是这个
+    <hr>
+    <a href="https://pansong291.wodemo.net/">潘松 (@pansong291)</a> | <a href="#" onclick="WoUtil.addReplyAt('@pansong291');return false" class="wo-reply-at">@</a>
+    at  2015-02-18 17:53:<a href="https://s.wodemo.net/admin/filetalkdelete/115003?return_to_file=1">Del.</a>
+    <br>
+    <a href="https://891622172.wodemo.net">@891622172</a> 代码太长，我上传了，你在我的磨里就能看到
+    <hr>
+    <a href="https://799616584.wodemo.com/">@799616584</a> | <a href="#" onclick="WoUtil.addReplyAt('@799616584');return false" class="wo-reply-at">@</a>
+    at  2020-07-20 03:26:<br>uuu<hr>
+    <div>Pg.: <span class="page_no_link">1</span> <a href="/entry/329736?page=2">2</a> </div>
+    <form method="POST" action="https://s.wodemo.net/">
+      <input type="hidden" name="act" value="file_talk">
+      <input type="hidden" name="fid" value="329736">
+      Comment:<br>
+      <textarea name="content" cols="15" rows="3" class="wo-reply-textarea"></textarea>
+      <div>Name:潘松</div>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <div data-wc-comments>
+    <br>----Comments(214)----<br>
+    <div>Pg.: <span class="page_no_link">1</span> <a href="/entry/304628?page=2">2</a> <a href="/entry/304628?page=3">3</a> <a href="/entry/304628?page=4">4</a> <a href="/entry/304628?page=5">5</a> <a href="/entry/304628?page=6">6</a> ... <a href="/entry/304628?page=8">8</a> </div>
+    <a href="https://uu.wodemo.com/">じ羁绊 (@uu)</a> | <a href="#" onclick="WoUtil.addReplyAt('@uu');return false" class="wo-reply-at">@</a>  at  2023-03-23 08:05:<br>可以了<hr>
+    <a href="https://zyw8.wodemo.com/">落叶似秋 (@zyw8)</a> | <a href="#" onclick="WoUtil.addReplyAt('@zyw8');return false" class="wo-reply-at">@</a>  at  2023-03-11 12:16:<br><a href="https://uu.wodemo.com">@uu</a> 加不上了啊<hr>
+    <a href="https://jieseba.wodemo.com/">@jieseba</a> | <a href="#" onclick="WoUtil.addReplyAt('@jieseba');return false" class="wo-reply-at">@</a>  at  2021-07-30 13:08:<br>留言测试……<hr>
+    anonymous  at  2021-02-12 08:04:<br>。。。。<hr>
+    anonymous  at  2021-02-12 08:03:<br>来看看……。。。。。。<hr>
+    <a href="https://uu.wodemo.com/">じ羁绊 (@uu)</a> | <a href="#" onclick="WoUtil.addReplyAt('@uu');return false" class="wo-reply-at">@</a>  at  2021-01-13 14:46:<br>过来康康你<hr>
+    <a href="https://3475272270.wodemo.com/">java应用商店 (@3475272270)</a> | <a href="#" onclick="WoUtil.addReplyAt('@3475272270');return false" class="wo-reply-at">@</a>  at  2020-12-19 01:03:<br><a href="https://zyw8.wodemo.com">@zyw8</a> 就是把私密的个人文件公开<hr>
+    <a href="https://zyw8.wodemo.com/">落叶似秋 (@zyw8)</a> | <a href="#" onclick="WoUtil.addReplyAt('@zyw8');return false" class="wo-reply-at">@</a>  at  2020-10-20 14:24:<br><a href="https://3475272270.wodemo.com">@3475272270</a> 怎么开放呀<hr>
+    <a href="https://3475272270.wodemo.com/">java应用商店 (@3475272270)</a> | <a href="#" onclick="WoUtil.addReplyAt('@3475272270');return false" class="wo-reply-at">@</a>  at  2020-08-05 14:46:<br>开下公开下载权限<hr>
+    <a href="https://zyw8.wodemo.com/">落叶似秋 (@zyw8)</a> | <a href="#" onclick="WoUtil.addReplyAt('@zyw8');return false" class="wo-reply-at">@</a>  at  2020-05-04 16:34:<br><a href="https://dixi666.wodemo.com">@dixi666</a> 感恩<hr>
+    <a href="https://zyw8.wodemo.com/">落叶似秋 (@zyw8)</a> | <a href="#" onclick="WoUtil.addReplyAt('@zyw8');return false" class="wo-reply-at">@</a>  at  2020-05-04 16:34:<br><a href="https://ffffffffff.wodemo.com">@ffffffffff</a>ddji 好久没维护了，抱歉<hr>
+    <a href="https://dixi666.wodemo.com/">帝熙网络 (@dixi666)</a> | <a href="#" onclick="WoUtil.addReplyAt('@dixi666');return false" class="wo-reply-at">@</a>  at  2020-02-01 13:03:<br>来转转……<hr>
+    ffffffffffddji  at  2019-11-17 18:26:<br>我的磨助手压根登录不了<hr>
+    <a href="https://zyw8.wodemo.com/">落叶似秋 (@zyw8)</a> | <a href="#" onclick="WoUtil.addReplyAt('@zyw8');return false" class="wo-reply-at">@</a>  at  2019-06-04 15:21:<br><a href="https://chouchou.wodemo.com">@chouchou</a> 你说我的磨助手吗？应该不会了<hr>
+    <a href="https://hccdesrxw.wodemo.com/">hcc (@hccdesrxw)</a> | <a href="#" onclick="WoUtil.addReplyAt('@hccdesrxw');return false" class="wo-reply-at">@</a>  at  2019-05-03 13:06:<br>来转转……<hr>
+    <a href="https://hccdesrxw.wodemo.com/">hcc (@hccdesrxw)</a> | <a href="#" onclick="WoUtil.addReplyAt('@hccdesrxw');return false" class="wo-reply-at">@</a>  at  2019-05-03 11:54:<br>加油<hr>
+    <a href="https://chouchou.wodemo.com/">@chouchou</a> | <a href="#" onclick="WoUtil.addReplyAt('@chouchou');return false" class="wo-reply-at">@</a>  at  2019-04-22 12:49:<br>还会更新吗，提个意见，撰文批量上传多文件，自带的多文件上传容易出错，最好流程类似于选择多文件，上传一个，然后再编辑再上传下一个，再编辑再上传下一个<hr><a href="https://lickumap.wodemo.com/">@lickumap</a> | <a href="#" onclick="WoUtil.addReplyAt('@lickumap');return false" class="wo-reply-at">@</a>  at  2018-12-28 02:55:<br>我的磨助手荣耀九不能登录，登了就用不了浏览器，不过比其他浏览器要好用<hr><a href="https://lickumap.wodemo.com/">@lickumap</a> | <a href="#" onclick="WoUtil.addReplyAt('@lickumap');return false" class="wo-reply-at">@</a>  at  2018-12-28 02:55:<br>我的磨助手荣耀九不能登录，登了就用不了浏览器，不过比其他浏览器要好用<hr><a href="https://oyh.wodemo.com/">IDBOY (@oyh)</a> | <a href="#" onclick="WoUtil.addReplyAt('@oyh');return false" class="wo-reply-at">@</a>  at  2018-12-04 04:45:<br>我只是打酱油滴～<hr><a href="https://dixi520.wodemo.com/">帝熙网络 (@dixi520)</a> | <a href="#" onclick="WoUtil.addReplyAt('@dixi520');return false" class="wo-reply-at">@</a>  at  2018-08-10 09:08:<br>来转转……<hr><a href="https://zyw8.wodemo.com/">落叶似秋 (@zyw8)</a> | <a href="#" onclick="WoUtil.addReplyAt('@zyw8');return false" class="wo-reply-at">@</a>  at  2018-06-23 19:08:<br><img src="http://bbs.uc.cn/static/image/smiley/uc/09.gif"><hr><a href="https://zyw8.wodemo.com/">落叶似秋 (@zyw8)</a> | <a href="#" onclick="WoUtil.addReplyAt('@zyw8');return false" class="wo-reply-at">@</a>  at  2018-05-14 09:47:<br>网站很不错!!!<hr><a href="https://zyw8.wodemo.com/">落叶似秋 (@zyw8)</a> | <a href="#" onclick="WoUtil.addReplyAt('@zyw8');return false" class="wo-reply-at">@</a>  at  2018-02-20 17:24:<br><a href="https://fujiwaracr.wodemo.com">@fujiwaracr</a> 没有了<hr><a href="https://fujiwaracr.wodemo.com/">藤原秋明 (@fujiwaracr)</a> | <a href="#" onclick="WoUtil.addReplyAt('@fujiwaracr');return false" class="wo-reply-at">@</a>  at  2018-02-11 10:14:<br>有没有最新版的我的磨助手？<hr><a href="https://zyw8.wodemo.com/">落叶似秋 (@zyw8)</a> | <a href="#" onclick="WoUtil.addReplyAt('@zyw8');return false" class="wo-reply-at">@</a>  at  2017-10-07 00:04:<br><a href="https://uu.wodemo.com">@uu</a> 你把你的给我得了<hr><a href="https://uu.wodemo.com/">じ羁绊 (@uu)</a> | <a href="#" onclick="WoUtil.addReplyAt('@uu');return false" class="wo-reply-at">@</a>  at  2017-10-06 19:48:<br>qq多少呀<hr><a href="https://565332016.wodemo.com/">Crazy白茫茫 (@565332016)</a> | <a href="#" onclick="WoUtil.addReplyAt('@565332016');return false" class="wo-reply-at">@</a>  at  2017-08-28 12:50:<br>来看看……<hr><a href="https://file.mismusic.cn/">迷失的音乐 (@misw)</a> | <a href="#" onclick="WoUtil.addReplyAt('@misw');return false" class="wo-reply-at">@</a>  at  2017-08-27 07:20:<br>网站很不错!!!<hr><a href="https://565332016.wodemo.com/">Crazy白茫茫 (@565332016)</a> | <a href="#" onclick="WoUtil.addReplyAt('@565332016');return false" class="wo-reply-at">@</a>  at  2017-08-26 09:34:<br>我只是打酱油滴～<hr>
+    <div>Pg.: <span class="page_no_link">1</span> <a href="/entry/304628?page=2">2</a> <a href="/entry/304628?page=3">3</a> <a href="/entry/304628?page=4">4</a> <a href="/entry/304628?page=5">5</a> <a href="/entry/304628?page=6">6</a> ... <a href="/entry/304628?page=8">8</a> </div>
+    <form method="POST" action="https://s.wodemo.com/">
+      <input type="hidden" name="act" value="file_talk">
+      <input type="hidden" name="fid" value="510476">
+      Comment:<br>
+      <textarea name="content" cols="15" rows="3" class="wo-reply-textarea"></textarea>
+      <div>Name:<input type="input" name="name" value="anonymous"></div>
+      <input type="submit" value="Submit">
+    </form>
+    <hr>
+  </div>
+  <div id="paso-back-home">
+    <a href="https://pansong291.wodemo.net/">Back to home</a>
+  </div>
+  <br><br>
+  <span class="wo-site-feed-link"><a href="https://pansong291.wodemo.net/subscribe">Subscribe</a> | </span>
+  <a href="https://wodemo.com/reg?return_to=https%3A%2F%2Fzyw8.wodemo.com%2Fentry%2F304628">Register</a> |
+  <a href="https://wodemo.com/login?return_to=https%3A%2F%2Fzyw8.wodemo.com%2Fentry%2F304628">Login</a>
+  <a href="https://s.wodemo.net/admin">Mgr.</a>
+  <span class="wo-n-count-block wo-hidden" style="display: inline;">
+    <a href="https://s.wodemo.net/notification">N<sup class="wo-n-count-num">0</sup></a>
+  </span>
+</div>
 </body>
 </html>
